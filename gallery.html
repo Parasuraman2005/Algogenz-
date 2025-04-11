@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - ALGOGENZ</title>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #00ffe7;
+      text-align: center;
+    }
+
+    header {
+      font-size:5em;
+      margin-bottom: 30px;
+      color: #00ffd5;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>Gallery</header>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="promo.html">PROMO VIDEO</a>
+    <a href="contact.html">CONTACT US</a>
+    <a href="team.html">TEAM MEMBER</a>
+  </nav>
+  <div class="gallery">
+    <!-- Replace the src values with your actual image paths -->
+    <img src="image18.jpg" alt="Gallery Image 1">
+    <img src="image2.jpg" alt="Gallery Image 2">
+    <img src="image3.jpg" alt="Gallery Image 3">
+    <img src="image4.jpg" alt="Gallery Image 4">
+    <img src="image5.jpg" alt="Gallery Image 5">
+    <img src="image6.jpg" alt="Gallery Image 6">
+    <img src="image7.jpg" alt="Gallery Image 7">
+    <img src="image8.jpg" alt="Gallery Image 8">
+    <img src="image9.jpg" alt="Gallery Image 9">
+    <img src="image10.jpg" alt="Gallery Image 10">
+    <img src="image11.jpg" alt="Gallery Image 11">
+    <img src="image12.jpg" alt="Gallery Image 12">
+    <img src="image13.jpg" alt="Gallery Image 13">
+    <img src="image14.jpg" alt="Gallery Image 14">
+    <img src="image15.jpg" alt="Gallery Image 15">
+    <img src="image16.jpg" alt="Gallery Image 16">
+    <img src="image17.jpg" alt="Gallery Image 17">
+    <img src="image1.jpg" alt="Gallery Image 18">
+    <img src="image19.jpg" alt="Gallery Image 19">
+    <img src="IMG-20250326-WA0011.jpg" alt="Gallery Image 20">
+  </div>
+
+</body>
+</html>

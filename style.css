@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #00ffe7;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+}
+
+header {
+  font-size: 5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-out;
+  color: #00ffd5;
+  text-shadow: 1px 1px 3px #000;
+}
+
+nav {
+  margin: 10px 0;
+  animation: fadeInDown 1.3s ease-out;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 10px;
+  padding: 12px 23px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: inline-block;
+}
+
+nav a:hover {
+  background: #00e5ff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.logo {
+  margin-top: 50px;
+  animation: fadeInUp 1.6s ease-out;
+}
+
+.logo img {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+  transition: transform 0.5s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header {
+    font-size: 2em;
+  }
+  nav a {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+  .logo img {
+    width: 80%;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #00ffe7;
+    }
+
+  .contact-info {
+      margin-top: 50px;
+      font-size: 1.2rem;
+      line-height: 2.5;
+    }
+
+  .contact-info i {
+      margin-top: 5px;
+      margin-right: 10px;
+      color: #00ffe7;
+    }
+ .typing-container {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+}
